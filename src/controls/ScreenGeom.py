@@ -14,6 +14,12 @@ def onClick_button():
     print("widget.geometry().y() = %d" % widget.geometry().y())
     print("widget.geometry().width() = %d" % widget.geometry().width())
     print("widget.geometry().height() = %d" % widget.geometry().height())
+
+    print("3")
+    print("widget.frameGeometry().x() = %d" % widget.frameGeometry().x())
+    print("widget.frameGeometry().y() = %d" % widget.frameGeometry().y())
+    print("widget.frameGeometry().width() = %d" % widget.frameGeometry().width())
+    print("widget.frameGeometry().height() = %d" % widget.frameGeometry().height())
 app = QApplication(sys.argv)
 widget = QWidget()
 btn = QPushButton(widget)
