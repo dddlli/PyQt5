@@ -28,20 +28,22 @@ class QLineEditEchoMode(QWidget):
         passwordEchoOnEdit = QLineEdit()
 
         formLayout.addRow("Normal",normalLineEdit)
-        formLayout.addRow("Noecho",noEchoLineEdit)
+        formLayout.addRow("NoEcho",noEchoLineEdit)
         formLayout.addRow("Password",passwordLineEdit)
-        formLayout.addRow("passwordEchoOnEdit",passwordEchoOnEdit)
+        formLayout.addRow("PasswordEchoOnEdit",passwordEchoOnEdit)
 
         #placeholdertext
         normalLineEdit.setPlaceholderText("Normal")
         noEchoLineEdit.setPlaceholderText("Echo")
         passwordLineEdit.setPlaceholderText("Password")
-        passwordEchoOnEdit.setPlaceholderText("passwordEchoOnEdit")
+        passwordEchoOnEdit.setPlaceholderText("PasswordEchoOnEdit")
 
         normalLineEdit.setEchoMode(QLineEdit.Normal)
         noEchoLineEdit.setEchoMode(QLineEdit.NoEcho)
         passwordLineEdit.setEchoMode(QLineEdit.Password)
         passwordEchoOnEdit.setEchoMode(QLineEdit.PasswordEchoOnEdit)
+
+        self.setLayout(formLayout)
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
